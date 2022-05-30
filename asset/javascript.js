@@ -31,9 +31,55 @@ if (currentDate()==(setTime)){
 
 
 //start adding a task to the page
+//set up input on click in <textarea>
+var createTask = function(taskText) {
+    // create tasks in time blocks
+var taskAdd = $("<textarea>")
+    .addClass("tasks")
+    .text(taskText);
+    //append task
+    taskAdd.append(taskText);
+
+    //     //check time
+    //    // CheckTime(taskText)
+     $("#list-" + taskAdd).append(taskText);
+};
 
 
 
+
+// $("#dayTask").on("click", "textarea", function() {
+
+//     var text = $(this)
+//     .text()
+//     .trim();
+// //get id info (later for persist)
+//     var status = $(this)
+//     .closest(".task")
+//     .att("id")
+//     .replace("list-","");
+
+    //module 5.1.6 if needed
+// tasks[status][index].text = text;
+// saveTasks();
+// //recreate element
+// var tasks = $("<textarea>")
+//     .addClass("task")
+//     .text(text);
+
+//     $(this).replaceWith(tasks)
+
+
+    // var textInput = $("<textarea>")
+    // .addClass("task")
+    // .val(text);
+    // $(this).replaceWith(textInput);
+    // textInput.trigger("focus");
+
+    // $(".task").on("blur", "textarea", function() {
+
+    // });
+    
 
 
 
@@ -76,9 +122,4 @@ if (currentDate()==(setTime)){
 
 
 // };
-// // var createTask = function(taskText) {
-// // // create tasks in time blocks
-// //     var taskText = $("<textarea>").addClass("textarea").text(taskText);
-//     //check time
-//    // CheckTime(taskText)
- 
+// // 
