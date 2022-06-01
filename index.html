@@ -1,174 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="asset/style.css" /> 
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container time-block">
-      <!-- Timeblocks go here -->
-      <div class="row">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="asset/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-        <!--time column-->
-        <div class="col-2 hour" id="7am">
-          <p class=>7:00 am</p>
-        </div>
-        <div class="col-8" id="dayTask">
-          <textarea class ="task"></textarea>
-        </div>
-        <div class="col-2 saveBtn">
-        </div>
-      
-        <!--time column-->
-          <div class="col-2 hour" id="8am">
-            <p><time datetime="08:00">8 am</time></p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task">test</textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row time-block" id="7">
 
-          <!--time column-->
-          <div class="col-2 hour" id="9am">
-            <p>9:00 am</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            
-            <!--time column-->
-            <div class="col-2 hour" id="10 am">
-              <p>10:00 am</p>
-            </div>
-            <div class="col-8" id="dayTask">
-              <textarea class ="task"></textarea>
-            </div>
-            <div class="col-2 saveBtn">
-            </div>
-              <!-- Save Icon -->
+      <!--time rows-->
 
-            <!--time column-->
-          <div class="col-2 hour" id="11am">
-            <p>11:00 am</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="12pm">
-            <p>12 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="1pm">
-            <p>1 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="2 pm">
-            <p>2 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="3pm">
-            <p><time datetime="15:00">3 pm</time></p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="4pm">
-            <p>4 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-
-            <!--time column-->
-          <div class="col-2 hour" id="5 pm">
-            <p>5 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-
-            <!--time column-->
-          <div class="col-2 hour" id="6pm">
-            <p>6 pm</p>
-          </div>
-          <div class="col-8" id="dayTask">
-            <textarea class ="task"></textarea>
-          </div>
-          <div class="col-2 saveBtn">
-          </div>
-            <!-- Save Icon -->
-            
-            
-            
-      <!-- end timeblocks -->
+      <div class="col-2 hour">
+        <p class=>7:00 am</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+    </div>
+    <!--time column-->
+    <div class="row time-block" id ="8">
+      <div class="col-2 hour">
+        <p><time datetime="08:00">8 am</time></p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task">test</textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="9">
+      <div class="col-2 hour">
+        <p>9:00 am</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="asset/javascript.js"></script>
-  </body>
+    <!--time column-->
+    <div class="row time-block" id="10">
+      <div class="col-2 hour">
+        <p>10:00 am</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="11">
+      <div class="col-2 hour">
+        <p>11:00 am</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="12">
+      <div class="col-2 hour">
+        <p>12 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="13">
+      <div class="col-2 hour" >
+        <p>1 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="14">
+      <div class="col-2 hour">
+        <p>2 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" >
+      <div class="col-2 hour" id="15">
+        <p><time datetime="15:00">3 pm</time></p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row">
+      <div class="col-2 hour" id="16">
+        <p>4 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+    <!--time column-->
+    <div class="row time-block" id ="17">
+      <div class="col-2 hour">
+        <p>5 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+    </div>
+    <!--time column-->
+    <div class="row time-block" id="18">
+      <div class="col-2 hour" >
+        <p>6 pm</p>
+      </div>
+      <div class="col-8" id="dayTask">
+        <textarea class="task"></textarea>
+      </div>
+      <div class="col-2 saveBtn">
+      </div>
+      <!-- Save Icon -->
+    </div>
+
+
+    <!-- end timeblocks -->
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="asset/javascript.js"></script>
+</body>
+
 </html>
