@@ -13,7 +13,7 @@ $(".saveBtn").click(function(){
    var task = $(this).siblings("#dayTask").children("textarea").val()
     var time = parseInt($(this).parent().attr("id"))
     if (task !="") {
-    alert(task + " " + time);
+    //alert(task + " " + time);
     }
 
 //save to local 
@@ -22,14 +22,17 @@ $(".saveBtn").click(function(){
 });
 
 function loadTasks() {
-    var task = localStorage.getItem(task)
-    var time = localStorage.getItem(time)
-    if (time) {
+    var time = localStorage.getItem(time);
+    var task = localStorage.getItem(task);
     
+    if (time) {
+    document.getElementById("hour").value = time;
     document.getElementById("daytask").value = task;
-    document.getElementById("").value = time;
+    
     textareaElement.taskarea = task
     divElement.setAttribute("#" + time);
+
+    
    // task = JSON.parse(localStorage.getItem("time"));
 
      loadTasks();
