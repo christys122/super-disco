@@ -5,6 +5,7 @@ var taskHour = document.querySelector("timeblock");
 
     
 //var tasks = [];
+//start adding a task to the page
 
 $(document).ready(function() {
 $(".saveBtn").click(function(){
@@ -12,13 +13,13 @@ $(".saveBtn").click(function(){
     if (task !="") {
     alert(task);
     }
-    //var text = $(task).siblings(".daytask").val();
+
+//var text = $(task).siblings(".daytask").val();
     var time = parseInt($(this).attr("id"))
     
-
     var taskObj = {task, time}
 
-     //save to local 
+//save to local 
     localStorage.setItem("task", JSON.stringify(taskObj));
 });
 
@@ -37,18 +38,18 @@ $(".time-block").each(function() {
     var currentTime = moment().format ("HH")
     if (currentTime > timeBlockHour) {
 
-   $(".time-block").removeClass("past present future")
-   $(".time-block").addClass("past");
+   $(this).removeClass("past present future")
+   $(this).addClass("past");
     }
     else {
     if (currentTime < timeBlockHour) {
-    $(".time-block").removeClass("past present future")    
-    $(".time-block").addClass("future");
+    $(this).removeClass("past present future")    
+    $(this).addClass("future");
     
     }
     else if (currentTime === timeBlockHour) {
-        $(".time-block").removeClass("past present future") 
-        $(".time-block").addClass("present");
+        $(this).removeClass("past present future") 
+        $(this).addClass("present");
     } 
      
   };
@@ -57,7 +58,7 @@ $(".time-block").each(function() {
 //end time block color
 
 
-//start adding a task to the page
+
 //set up input on click in <textarea> input works, need to save
 // var createTask = function() {
 //     var taskAdd = $(textInput).value
