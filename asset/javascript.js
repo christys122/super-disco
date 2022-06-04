@@ -55,59 +55,7 @@ $(".time-block").each(function() {
   };
 });
 });
-//end time block color
 
-
-
-//set up input on click in <textarea> input works, need to save
-// var createTask = function() {
-//     var taskAdd = $(textInput).value
-//     .addClass("task")
-//     .text(this)    
-    
-// //taskAdd.append(taskAdd, taskHour); 
-// $(".task" + taskHour).append(taskAdd);     
-// };
-// createTask();
-
-//create save button with icon
-// $(".saveBtn").click(function() {
-//   saveTasks()
-// });
-
-// var loadTasks = function() {
-//     taskLoad = JSON.parse(localStorage.getItem("key", taskLoad));
-//     if (!taskLoad) {
-//         taskLoad = {
-//         tasks: [],
-//         hour: []
-//         };
-//     }
-//     //loop
-//     $.each(taskLoad, function(arr) {
-//         arr.forEach(function(task) {
-//             createTask(task.text, task.hour);
-//         });
-//     });
-// };
-
-
-
-//get id info for persist
-// $(".task").on("blur", "textarea", function() {
-//     var text = $(this).val();
-    
-//     var status = $(this)
-//     .closest(".hour")
-//     .attr("id")
-//     .replace("list-","");
-
-//     var index = $(this)
-//         .closest(".row")
-//         .index();
-
-//     tasks[status][index].text = text;
-   // saveTasks();
 
     
 // });        
